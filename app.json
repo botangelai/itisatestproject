@@ -1,30 +1,51 @@
 {
- "name": "Forward gram by ai",
- "description": "forward Telegram files from one channel to other !!",
- "logo": "https://telegra.ph/file/c3d25aa057a3aa2282d50.png",
- "keywords": [
-   "telegram",
-   "forward from one to another"
-  ],
- "repository": "https://github.com/TGExplore/TG-Files-to-Link",
- "env": {
-   "TG_API_ID": {
-      "description": "Your Telegram API ID. Get this value from my.telegram.org!",
-      "value": ""
-  },
-   "TG_API_HASH": {
-      "description": " Your Telegram API hash. Get this value from my.telegram.org!",
-      "value": ""
-  },
-   "TG_SESSION_NAME": {
-      "description": "Run Console this (python3 forwardgram.py config.yml)",
-      "value": ""
-  },
-   "input_channel_names": {
-      "description": "Name of the channel from where you wanted to sent the message",
-      "value": ""
-  },
-   "output_channel_names": {
-      "description": "Name of the channel you want to recive messages",
-      "value": ""
-  }
+    "name": "Media Search bot",
+    "description": "When you going to send file on telegram channel/group this bot will save that in database, So you can search that easily in inline mode",
+    "keywords": [
+      "telegram",
+      "best",
+      "indian",
+      "pyrogram",
+      "media",
+      "search",
+      "channel",
+      "index",
+      "inline"
+    ],
+    "website": "https://github.com/Mahesh0253/Media-Search-bot",
+    "repository": "https://github.com/Mahesh0253/Media-Search-bot",
+    "env": {
+        "API_ID": {
+            "description": "Get this value from https://my.telegram.org",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Get this value from https://my.telegram.org",
+            "value": ""
+        },
+        "input_channel_names": {
+            "description": "Username or ID of channel or group. Separate multiple IDs by space.",
+            "value": ""
+        },
+        "output_channel_names": {
+            "description": "Username or ID of Admin. Separate multiple Admins by space.",
+            "value": ""
+        },
+        "session_name": {
+            "description": "mongoDB URI. Get this value from https://www.mongodb.com. For more help watch this video - https://youtu.be/dsuTn4qV2GA",
+            "value": ""
+        }
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
+}
