@@ -1,0 +1,18 @@
+import os
+
+class Config(object):
+    api_id = int(os.environ.get("TG_APP_ID", 12345)) # This has to be an integer. Read more [here](https://core.telegram.org/api/obtaining_api_id)
+    api_hash = os.environ.get("TG_API_HASH") # Long 32 characters hash identifier. Read more [here](https://core.telegram.org/api/obtaining_api_id)
+    session_name = os.environ.get("TG_SESSION_NAME", forwardgram) # Session name. Only one session (with a unique session name) can run at a time
+
+# The channel names that you'd like to forward messages from.
+# The user running the client must have these channels present on it's dialogs.
+input_channel_names:
+  - 'Input Channel Name 1'
+  - 'Input Channel Name 2'
+
+# The output channel names that the messages will be forwarded to.
+# The user running the client must have a write access to those channels, and have the channels present on theirs dialogs.
+output_channel_names: 
+  - 'Output Channel Name 1'
+  - 'Output Channel Name 2'

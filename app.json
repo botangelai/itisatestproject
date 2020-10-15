@@ -1,0 +1,24 @@
+{
+ "name": "Forward gram by ai",
+ "description": "forward Telegram files from one channel to other !!",
+ "logo": "https://telegra.ph/file/c3d25aa057a3aa2282d50.png",
+ "keywords": [
+   "telegram",
+   "forward from one to another"
+  ],
+ "repository": "https://github.com/TGExplore/TG-Files-to-Link",
+ "env": {
+   "TG_API_ID": {
+      "description": "Your Telegram API ID. Get this value from my.telegram.org!",
+      "value": ""
+  },
+   "TG_API_HASH": {
+      "description": " Your Telegram API hash. Get this value from my.telegram.org!",
+      "value": ""
+  },
+   "TG_SESSION_NAME": {
+      "description": "Run Console this (python3 forwardgram.py config.yml) ",
+      "value": ""
+  },
+ }
+}
