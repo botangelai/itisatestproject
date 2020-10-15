@@ -17,8 +17,27 @@
       "value": ""
   },
    "TG_SESSION_NAME": {
-      "description": "Run Console this (python3 forwardgram.py config.yml) ",
+      "description": "Run Console this (python3 forwardgram.py config.yml)",
       "value": ""
   },
- }
+   "input_channel_names": {
+      "description": "Name of the channel from where you wanted to sent the message",
+      "value": ""
+  },
+   "output_channel_names": {
+      "description": "Name of the channel you want to recive messages",
+      "value": ""
+  },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    }
 }
