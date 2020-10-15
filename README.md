@@ -1,3 +1,5 @@
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy/)
+
 # forwardgram
 Forward messages from multiple Telegram channels or chats to one (or more) chat or channel of your own!
 
