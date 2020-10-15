@@ -7,12 +7,8 @@ class Config(object):
 
 # The channel names that you'd like to forward messages from.
 # The user running the client must have these channels present on it's dialogs.
-input_channel_names:
-  - 'Input Channel Name 1'
-  - 'Input Channel Name 2'
+    input_channel_names = os.environ.get("input_channel_names")
 
 # The output channel names that the messages will be forwarded to.
 # The user running the client must have a write access to those channels, and have the channels present on theirs dialogs.
-output_channel_names: 
-  - 'Output Channel Name 1'
-  - 'Output Channel Name 2'
+    output_channel_names = os.environ.get("output_channel_names")
