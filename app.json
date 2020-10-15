@@ -27,17 +27,4 @@
    "output_channel_names": {
       "description": "Name of the channel you want to recive messages",
       "value": ""
-  },
-    "addons": [],
-    "buildpacks": [
-        {
-            "url": "heroku/python"
-        }
-    ],
-    "formation": {
-        "worker": {
-            "quantity": 1,
-            "size": "free"
-        }
-    }
-}
+  }
